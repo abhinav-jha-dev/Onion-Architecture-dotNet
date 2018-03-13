@@ -26,4 +26,5 @@ There is a Infrastructure layer for setting the infrastructure of the applicatio
 5. Middleware for Relational database.
 
 Learning Link:
-PPT Link:
+PPT Link: Base Architecture
+https://docs.google.com/presentation/d/1qlRCNe4QP34AUX3g4ziqviR5KpaicqLALp5tK2uhDJA/edit?usp=sharing
