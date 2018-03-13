@@ -1,4 +1,4 @@
-# ProjectOnion
+# ProjectOnion1.0
 Onion based architectural design for large scale applications.
 
 #Technology Used
@@ -19,7 +19,11 @@ Fantastic 4: layered architecture.
 There is a Infrastructure layer for setting the infrastructure of the application.
 
 #Upcoming Changes:
-1. Unit Tests Environment.
-2. Integration Tests Environment.
-3. Selenium Tests Environment.
-4. Middleware for Relational database.
+1. Swagger- for api documentation
+2. Unit Tests Environment.
+3. Integration Tests Environment.
+4. Selenium Tests Environment.
+5. Middleware for Relational database.
+
+Learning Link:
+PPT Link:
