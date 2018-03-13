@@ -1,0 +1,13 @@
+﻿################################################################################
+# This .gitignore file was automatically created by Microsoft(R) Visual Studio.
+################################################################################
+
+/data/ProjectOnion.MongoDB/bin/Debug/netcoreapp2.0
+/data/ProjectOnion.MongoDB/obj
+/ProjectOnion/bin/Debug/netcoreapp2.0
+/ProjectOnion/obj
+/src/ProjectOnion.Model/bin/Debug/netcoreapp2.0
+/src/ProjectOnion.Model/obj
+/src/ProjectOnion.Repository/obj
+/src/ProjectOnion.Repository/bin/Debug/netcoreapp2.0
+/src/ProjectOnion.Service/obj
