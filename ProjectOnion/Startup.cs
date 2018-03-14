@@ -1,12 +1,14 @@
-﻿using Microsoft.AspNetCore.Builder;
+﻿using System.Threading.Tasks;
+using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.HttpOverrides;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using ProjectOnion.Http.Dependencies;
+using Swashbuckle.AspNetCore.Swagger;
 
-namespace ProjectOnion
+namespace ProjectOnion.Http
 {
     public class Startup
     {
@@ -24,8 +26,25 @@ namespace ProjectOnion
             var connectionString = Configuration.GetValue<string>("MongoConnection:ConnectionString");
             var databaseName = Configuration.GetValue<string>("MongoConnection:DatabaseName");
             services.AddSingleton<IHttpContextAccessor, HttpContextAccessor>();
+
             // Project Dependency Injection
             services.RegisterDependencies(connectionString, databaseName);
+
+            // Register the Swagger generator, defining one or more Swagger documents
+            services.AddSwaggerGen(c =>
+            {
+                c.SwaggerDoc("v1", new Info
+                {
+                    Version = "v1",
+                    Title = "Project Onion API",
+                    Description = "A simple onion architecture based project api.",
+                    TermsOfService = "None",
+                    Contact = new Contact { Name = "Abhinav Jha", Email = "", Url = "https://www.linkedin.com/in/abhinav-jha-60269477/" },
+                    License = new License { Name = "Use under MIT", Url = "https://github.com/abhinav2127/ProjectOnion" }
+                });
+
+                c.DocInclusionPredicate((docName, api) => api.RelativePath.Contains(docName));
+            });
 
             services.AddMvc();
         }
@@ -37,6 +56,15 @@ namespace ProjectOnion
             {
                 app.UseDeveloperExceptionPage();
             }
+
+            // Enable middleware to serve generated Swagger as a JSON endpoint.
+            app.UseSwagger();
+
+            // Enable middleware to serve swagger-ui (HTML, JS, CSS, etc.), specifying the Swagger JSON endpoint.
+            app.UseSwaggerUI(c =>
+            {
+                c.SwaggerEndpoint("/swagger/v1/swagger.json", "V1 Docs");
+            });
 
             app.UseForwardedHeaders(new ForwardedHeadersOptions
             {

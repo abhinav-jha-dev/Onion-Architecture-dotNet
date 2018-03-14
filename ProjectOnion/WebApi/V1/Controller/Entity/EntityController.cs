@@ -25,7 +25,7 @@ namespace ProjectOnion.Http.WebApi.V1.Controller.Entity
             _accessor = accessor;
         }
 
-        public void SetClientIp(TEntity entityObject)
+        protected void SetClientIp(TEntity entityObject)
         {
             entityObject.IPAddress = _accessor.HttpContext.Connection.RemoteIpAddress.ToString();
         }
