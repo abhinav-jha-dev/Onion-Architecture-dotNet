@@ -21,8 +21,7 @@ There is a Infrastructure layer for setting the infrastructure of the applicatio
 #Upcoming Changes:
 1. Unit Tests Environment.
 2. Integration Tests Environment.
-3. Selenium Tests Environment.
-4. Middleware for Relational database.
+3. Middleware for Relational database.
 
 Learning Link:
 PPT Link: Base Architecture
