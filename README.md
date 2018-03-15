@@ -41,3 +41,6 @@ I have implemented Swagger for API documentation. To get in to more deep details
 https://www.linkedin.com/pulse/project-onion-update-1-abhinav-jha/
 
 We beleave in scalability so clone this repo and explore the architecture.
+
+Please spare some time and give your suggestions to improve this template:
+https://goo.gl/forms/gEWMwXeCdHNPmEan1
