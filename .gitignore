@@ -12,3 +12,10 @@
 /src/ProjectOnion.Repository/bin/Debug/netcoreapp2.0
 /src/ProjectOnion.Service/obj
 /src/ProjectOnion.Service/bin/Debug/netcoreapp2.0
+.vs/
+/src/ProjectOnion/obj
+/src/ProjectOnion/bin/Debug/netcoreapp2.0
+/tests/ProjectOnion.IntegrationTests/bin/Debug/netcoreapp2.0
+/tests/ProjectOnion.IntegrationTests/obj
+/tests/ProjectOnion.UnitTests/obj
+/tests/ProjectOnion.UnitTests/bin/Debug/netcoreapp2.0

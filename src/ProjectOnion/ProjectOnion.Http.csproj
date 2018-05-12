@@ -18,7 +18,10 @@
   </ItemGroup>
 
   <ItemGroup>
-    <ProjectReference Include="..\src\ProjectOnion.Service\ProjectOnion.Service.csproj" />
+    <ProjectReference Include="..\..\data\ProjectOnion.MongoDB\ProjectOnion.MongoDB.csproj" />
+    <ProjectReference Include="..\ProjectOnion.Model\ProjectOnion.Model.csproj" />
+    <ProjectReference Include="..\ProjectOnion.Repository\ProjectOnion.Repository.csproj" />
+    <ProjectReference Include="..\ProjectOnion.Service\ProjectOnion.Service.csproj" />
   </ItemGroup>
 
 </Project>

@@ -3,15 +3,25 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 15
 VisualStudioVersion = 15.0.27130.2036
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ProjectOnion.Http", "ProjectOnion\ProjectOnion.Http.csproj", "{93A3A5CE-4BC6-4D2B-AAD1-EAFB3CCE52E9}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ProjectOnion.Http", "src\ProjectOnion\ProjectOnion.Http.csproj", "{93A3A5CE-4BC6-4D2B-AAD1-EAFB3CCE52E9}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ProjectOnion.Service", "src\ProjectOnion.Service\ProjectOnion.Service.csproj", "{B9179BB6-2DAF-46BE-B7E0-C10680A14F47}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ProjectOnion.Service", "src\ProjectOnion.Service\ProjectOnion.Service.csproj", "{B9179BB6-2DAF-46BE-B7E0-C10680A14F47}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ProjectOnion.Repository", "src\ProjectOnion.Repository\ProjectOnion.Repository.csproj", "{6AB7907C-EE1D-4237-92EB-6B3ADC0F41C6}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ProjectOnion.Repository", "src\ProjectOnion.Repository\ProjectOnion.Repository.csproj", "{6AB7907C-EE1D-4237-92EB-6B3ADC0F41C6}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ProjectOnion.MongoDB", "data\ProjectOnion.MongoDB\ProjectOnion.MongoDB.csproj", "{E87FEAB0-B21D-4671-B20A-80AC6C18A6CB}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ProjectOnion.MongoDB", "data\ProjectOnion.MongoDB\ProjectOnion.MongoDB.csproj", "{E87FEAB0-B21D-4671-B20A-80AC6C18A6CB}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ProjectOnion.Model", "src\ProjectOnion.Model\ProjectOnion.Model.csproj", "{CBBADFED-26BF-4528-A823-E870B835E656}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ProjectOnion.Model", "src\ProjectOnion.Model\ProjectOnion.Model.csproj", "{CBBADFED-26BF-4528-A823-E870B835E656}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "src", "src", "{EBECD41F-7346-4804-8557-4327AFD707F7}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "data", "data", "{3C82D0E7-F462-4B96-BDF0-AD79652D6BC4}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "tests", "tests", "{C5C6B1A8-1016-4043-8620-E0FA0DFCA7F2}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ProjectOnion.UnitTests", "tests\ProjectOnion.UnitTests\ProjectOnion.UnitTests.csproj", "{3BD0D7AE-EB12-422B-A1AC-68460B8A6365}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ProjectOnion.IntegrationTests", "tests\ProjectOnion.IntegrationTests\ProjectOnion.IntegrationTests.csproj", "{45F4506E-D296-4127-A3DB-9CDE09E9617A}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -39,9 +49,26 @@ Global
 		{CBBADFED-26BF-4528-A823-E870B835E656}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{CBBADFED-26BF-4528-A823-E870B835E656}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{CBBADFED-26BF-4528-A823-E870B835E656}.Release|Any CPU.Build.0 = Release|Any CPU
+		{3BD0D7AE-EB12-422B-A1AC-68460B8A6365}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{3BD0D7AE-EB12-422B-A1AC-68460B8A6365}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{3BD0D7AE-EB12-422B-A1AC-68460B8A6365}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{3BD0D7AE-EB12-422B-A1AC-68460B8A6365}.Release|Any CPU.Build.0 = Release|Any CPU
+		{45F4506E-D296-4127-A3DB-9CDE09E9617A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{45F4506E-D296-4127-A3DB-9CDE09E9617A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{45F4506E-D296-4127-A3DB-9CDE09E9617A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{45F4506E-D296-4127-A3DB-9CDE09E9617A}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{93A3A5CE-4BC6-4D2B-AAD1-EAFB3CCE52E9} = {EBECD41F-7346-4804-8557-4327AFD707F7}
+		{B9179BB6-2DAF-46BE-B7E0-C10680A14F47} = {EBECD41F-7346-4804-8557-4327AFD707F7}
+		{6AB7907C-EE1D-4237-92EB-6B3ADC0F41C6} = {EBECD41F-7346-4804-8557-4327AFD707F7}
+		{E87FEAB0-B21D-4671-B20A-80AC6C18A6CB} = {3C82D0E7-F462-4B96-BDF0-AD79652D6BC4}
+		{CBBADFED-26BF-4528-A823-E870B835E656} = {EBECD41F-7346-4804-8557-4327AFD707F7}
+		{3BD0D7AE-EB12-422B-A1AC-68460B8A6365} = {C5C6B1A8-1016-4043-8620-E0FA0DFCA7F2}
+		{45F4506E-D296-4127-A3DB-9CDE09E9617A} = {C5C6B1A8-1016-4043-8620-E0FA0DFCA7F2}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {6FE851FD-7988-437B-89B3-7AD921683D50}
